@@ -1,9 +1,0 @@
-{
-  "random_seed": 42,
-  "val_ratio": 0.2,
-  "train_split_rows": 4717042,
-  "val_split_rows": 1152589,
-  "train_split_users": 53424,
-  "val_split_users": 53424,
-  "description": "按用户分层随机切分，固定随机种子 42，每位用户至少保留 1 个验证样本"
-}
