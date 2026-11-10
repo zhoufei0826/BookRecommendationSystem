@@ -1,0 +1,12 @@
+{
+  "model": "BPR-MF (Bayesian Personalized Ranking Matrix Factorization)",
+  "n_factors": 32,
+  "n_epochs": 20,
+  "learning_rate": 0.05,
+  "reg_lambda": 0.01,
+  "negative_samples": 1,
+  "random_seed": 42,
+  "n_users": 53424,
+  "n_items": 10000,
+  "description": "纯 numpy 实现的 BPR 矩阵分解，用于隐式反馈排序，作为 ALS 的对照模型"
+}
