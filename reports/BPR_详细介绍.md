@@ -61,7 +61,7 @@ $$\hat{x}_{u,i} - \hat{x}_{u,j} > 0$$
 
 将得分差通过 sigmoid 函数映射为概率：
 
-$$P(i \succ_u j \mid \Theta) = \sigma(\hat{x}_{u,i} - \hat{x}_{u,j}) = \frac{1}{1 + e^{-(\hat{x}_{u,i} - \hat{x}_{u,j})}}$$$
+$$P(i \succ_u j \mid \Theta) = \sigma(\hat{x}_{u,i} - \hat{x}_{u,j}) = \frac{1}{1 + e^{-(\hat{x}_{u,i} - \hat{x}_{u,j})}}$$
 
 给定所有观测到的用户-物品交互数据 $D_S = \{(u, i, j)\}$，似然函数为：
 
