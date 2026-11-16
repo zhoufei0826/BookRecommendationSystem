@@ -1,0 +1,10 @@
+﻿实验编号,负责人,数据切分,模型,关键参数,micro-P@10,micro-R@10,micro-F1@10,macro-F1@10,覆盖率,运行时间(秒),备注
+B-001,成员 B,train_split/seed42,ItemKNN,sim=cosine;neighbors=100;beta=0.5;alpha=0.0,0.30093,0.139485,0.190617,0.191897,0.5264,33.1,最终采用配置，余弦相似度 + 邻域 100 + 历史降权 0.5，无候选惩罚
+B-002,成员 B,train_split/seed42,ItemKNN,sim=cosine;neighbors=100;beta=0.0;alpha=0.0,0.266655,0.123598,0.168906,0.170507,0.3099,14.9,相似度=cosine，邻居=100，历史降权beta=0.0，候选惩罚alpha=0.0，回退用户数=0
+B-003,成员 B,train_split/seed42,ItemKNN,sim=cosine;neighbors=300;beta=0.5;alpha=0.0,0.299253,0.138708,0.189554,0.19123,0.4655,16.7,相似度=cosine，邻居=300，历史降权beta=0.5，候选惩罚alpha=0.0，回退用户数=0
+B-004,成员 B,train_split/seed42,ItemKNN,sim=raw;neighbors=100;beta=0.5;alpha=0.0,0.158389,0.073416,0.100328,0.099913,0.0317,16.5,相似度=raw，邻居=100，历史降权beta=0.5，候选惩罚alpha=0.0，回退用户数=0
+B-005,成员 B,train_split/seed42,ItemKNN,sim=cosine;shrinkage=0.0;user_weight=0.5;neighbors=50;beta=0.5;alpha=0.0;hist_norm=sum,0.302918,0.140407,0.191876,0.19274,0.5978,15.3,网格搜索最优（余弦+N=50+用户加权γ=0.5）；多随机种子复测均值0.1870 vs B-001的0.1861，差异小于跨切分标准差0.0034，判定为噪声，不采纳为最终模型
+B-006,成员 B,train_split/seed42,ItemKNN,sim=tfidf;shrinkage=0.0;user_weight=0.0;neighbors=100;beta=0.5;alpha=0.0;hist_norm=sum,0.263017,0.121912,0.166601,0.167523,0.7492,14.2,IDF抑制热门书：F1下降但覆盖率74.9%、热门度分位0.691，属多样性取向备选
+B-007,成员 B,train_split/seed42,ItemKNN,sim=cosine;shrinkage=10.0;user_weight=0.0;neighbors=100;beta=0.5;alpha=0.0;hist_norm=sum,0.298033,0.138142,0.188781,0.190319,0.426,15.6,相似度收缩（co/(co+10)）无收益，F1略降且覆盖率降至42.6%，负结果
+B-008,成员 B,train_split/seed42,ItemKNN,sim=conditional;shrinkage=0.0;user_weight=0.0;neighbors=100;beta=0.5;alpha=0.0;hist_norm=sum,0.22021,0.10207,0.139487,0.140755,0.2504,15.1,条件概率相似度 P(i|j) 对称化后显著劣于余弦，负结果
+B-009,成员 B,train_split/seed42,ItemKNN,sim=cosine;shrinkage=0.0;user_weight=0.5;neighbors=50;beta=0.5;alpha=0.0;hist_norm=sum,0.265811,0.123207,0.168372,0.169542,0.6641,15.6,多样性约束实验：排除最热1%图书，F1降0.0234、覆盖率升0.066，用于刻画F1-多样性权衡
