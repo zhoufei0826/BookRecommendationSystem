@@ -1,0 +1,17 @@
+﻿实验编号,负责人,数据切分,模型,关键参数,micro-P@10,micro-R@10,micro-F1@10,macro-F1@10,覆盖率,运行时间(秒),备注
+C-001,成员 C,train_split/seed42,隐式 ALS,factors=32;epochs=10;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.0,0.211970,0.098251,0.134267,0.135291,0.3507,,训练耗时7.8秒（不含排序/评估）；验证数据未参与训练
+C-002,成员 C,train_split/seed42,ALS+热门度融合,factors=32;epochs=10;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.1,0.221200,0.102529,0.140114,0.140822,0.3162,,训练耗时7.8秒（不含排序/评估）；验证数据未参与训练
+C-003,成员 C,train_split/seed42,ALS+热门度融合,factors=32;epochs=10;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.25,0.228753,0.106030,0.144898,0.145216,0.2558,,训练耗时7.8秒（不含排序/评估）；验证数据未参与训练
+C-004,成员 C,train_split/seed42,ALS+热门度融合,factors=32;epochs=10;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.5,0.195903,0.090803,0.124090,0.123665,0.1260,,训练耗时7.8秒（不含排序/评估）；验证数据未参与训练
+C-005,成员 C,train_split/seed42,隐式 ALS,factors=64;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.0,0.227776,0.105577,0.144279,0.146296,0.4531,,训练耗时10.0秒（不含排序/评估）；验证数据未参与训练
+C-006,成员 C,train_split/seed42,ALS+热门度融合,factors=64;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.1,0.237386,0.110031,0.150366,0.152183,0.4028,,训练耗时10.0秒（不含排序/评估）；验证数据未参与训练
+C-007,成员 C,train_split/seed42,ALS+热门度融合,factors=64;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.25,0.245796,0.113930,0.155693,0.156968,0.3202,,训练耗时10.0秒（不含排序/评估）；验证数据未参与训练
+C-008,成员 C,train_split/seed42,ALS+热门度融合,factors=64;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.5,0.217333,0.100737,0.137664,0.137835,0.1669,,训练耗时10.0秒（不含排序/评估）；验证数据未参与训练
+C-009,成员 C,train_split/seed42,隐式 ALS,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.0,0.242035,0.112187,0.153311,0.156754,0.5497,,训练耗时36.0秒（不含排序/评估）；验证数据未参与训练
+C-010,成员 C,train_split/seed42,ALS+热门度融合,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.1,0.248437,0.115154,0.157366,0.160688,0.4858,,训练耗时36.0秒（不含排序/评估）；验证数据未参与训练
+C-011,成员 C,train_split/seed42,ALS+热门度融合,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.25,0.253390,0.117449,0.160504,0.163233,0.3788,,训练耗时36.0秒（不含排序/评估）；验证数据未参与训练
+C-012,成员 C,train_split/seed42,ALS+热门度融合,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.5,0.232609,0.107817,0.147340,0.148276,0.1977,,训练耗时36.0秒（不含排序/评估）；验证数据未参与训练
+C-013,成员 C,train_split/seed43,隐式 ALS,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.0,0.240686,0.111561,0.152456,0.155804,0.5500,,训练耗时32.3秒（不含排序/评估）；验证数据未参与训练
+C-014,成员 C,train_split/seed43,ALS+热门度融合,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.1,0.248426,0.115149,0.157359,0.160538,0.4875,,训练耗时32.3秒（不含排序/评估）；验证数据未参与训练
+C-015,成员 C,train_split/seed43,ALS+热门度融合,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.25,0.255621,0.118484,0.161917,0.164556,0.3881,,训练耗时32.3秒（不含排序/评估）；验证数据未参与训练
+C-016,成员 C,train_split/seed43,ALS+热门度融合,factors=128;epochs=12;alpha=40.0;reg=0.1;cg_steps=3;pop_weight=0.5,0.241021,0.111716,0.152669,0.153546,0.2014,,训练耗时32.3秒（不含排序/评估）；验证数据未参与训练

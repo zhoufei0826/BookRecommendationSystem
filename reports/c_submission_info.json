@@ -1,0 +1,41 @@
+{
+  "train_path": "data/train_dataset.csv",
+  "train_sha256": "5ffa6b9d1dc2a055e0229e264edf91937836d0045938b3600f61b9f831644f86",
+  "configuration": {
+    "als": {
+      "factors": 128,
+      "iterations": 12,
+      "alpha": 40.0,
+      "regularization": 0.1,
+      "cg_steps": 3,
+      "seed": 42
+    },
+    "knn": {
+      "neighbors": 100,
+      "beta": 0.5
+    },
+    "top_k": 10,
+    "blend": {
+      "als_weight": 0.5,
+      "als_pop_weight": 0.0
+    },
+    "selected_on": {
+      "train_sha256": "1053679989efe024395e98c4dc9beb89fb33c35701d968631261cdde64d9250c",
+      "val_sha256": "090642892e8df6c68053cba9e7c0485c7765c492977ce4937b43b3a3c2c58a25",
+      "label": "mix_als_0.5",
+      "micro_f1": 0.20348950604951657
+    }
+  },
+  "train_seconds": 52.253079399932176,
+  "code_sha256": {
+    "ensemble.py": "285abbf41128a062c828802415435fe413c2d8db8836a2de14a2f6a938f745b5",
+    "implicit_als.py": "9511c1ba86c101103bd17633e68d8eb4f9cd7bb1f6fd4253367f8ebac111c690",
+    "item_knn.py": "56413c605ec8ea07389e4d5762e735aab84711464b0e4166e40de1b6b416320e",
+    "evaluate.py": "4d0e5256e26937477b81a70464e202a1d18e25210075a53d25888188c5e4eec5"
+  },
+  "output": "data\\submission_fusion.csv",
+  "output_sha256": "8d6f33d5c9274d37932ec744de2498e27334fb8adb38f6cec0fff9f16e16b33c",
+  "test_sha256": "ee6f2f0302fe59a7eafd16abe50291b002c71a1d0b85aa31a716f6cb17f16fd8",
+  "rows": 534240,
+  "total_seconds": 95.98080049990676
+}

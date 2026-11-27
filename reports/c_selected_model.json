@@ -1,0 +1,25 @@
+{
+  "als": {
+    "factors": 128,
+    "iterations": 12,
+    "alpha": 40.0,
+    "regularization": 0.1,
+    "cg_steps": 3,
+    "seed": 42
+  },
+  "knn": {
+    "neighbors": 100,
+    "beta": 0.5
+  },
+  "top_k": 10,
+  "blend": {
+    "als_weight": 0.5,
+    "als_pop_weight": 0.0
+  },
+  "selected_on": {
+    "train_sha256": "1053679989efe024395e98c4dc9beb89fb33c35701d968631261cdde64d9250c",
+    "val_sha256": "090642892e8df6c68053cba9e7c0485c7765c492977ce4937b43b3a3c2c58a25",
+    "label": "mix_als_0.5",
+    "micro_f1": 0.20348950604951657
+  }
+}
